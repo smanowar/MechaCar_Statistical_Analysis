@@ -3,7 +3,7 @@ library(dplyr)
 # Deliverable 1
 #----------------
 #read csv into R
-mechaCar <- read.csv("MechaCar_mpg.csv", sep=",", stringsAsFactors = F)
+mechaCar <- read.csv("resources/MechaCar_mpg.csv", sep=",", stringsAsFactors = F)
 
 #linear regression
 regression_mechaCar <- lm(mpg~vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD, data =mechaCar)
@@ -16,7 +16,7 @@ summary(regression_mechaCar)
 #Deliverable 2
 #--------------
 #read csv into R
-suspensionCoil <- read.csv("Suspension_Coil.csv", sep=",", stringsAsFactors = F)
+suspensionCoil <- read.csv("resources/Suspension_Coil.csv", sep=",", stringsAsFactors = F)
 
 #mean, median, and sd
 total_summary <- suspensionCoil %>% summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))
