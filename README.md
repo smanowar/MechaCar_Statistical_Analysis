@@ -9,6 +9,17 @@ Performing a linear Regression analysis on the data yeilds the following summary
 
 ***Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?***
 
+The p-Values for the coefficients are as follows:
+
+- vehicle length: 2.60x10^-12
+- vehicle weight: 0.0776
+- spoiler angle: 0.3069
+- ground clearance: 5.21x10^-8
+- AWD: 0.1852
+
+From this we can see that vehicle length and ground clearance have a statistically signifigant impact on the mpg of the prototypes. 
+<br>
+
  ***Is the slope of the linear model considered to be zero? Why or why not?***
 <br>
 As seen in the picture above, the p-value is calculated to be 5.35x10^-11 - which has more significance than even an extreme signifigance. 
@@ -38,23 +49,26 @@ However, taking a look at the Lot Summary stats, we can see that the variance fo
 
 ## T-Tests on Suspension Coils
 ***Briefly summarize your interpretation and findings for the t-test results***
-<p align="center">
-<img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testAllLots.PNG> 
-</p>
 
-The results of the t-test for the suspension coils across all manufacturing lots shows that they are not statistically different from the population mean,  as the results yeilded a t-value of -1.89.
-<br>
+**All Lots:** The results of the t-test for the suspension coils across all manufacturing lots shows that they are not statistically different from the population mean,  as the results yeilded a t-value of -1.89.
 <p align="center">
-<img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testLot1.PNG> 
-</p>
-The results of the t-test for the suspension coils for Lot 1 shows that they are not statistically different from the population mean, as the results yeilded a t-value of 0.
+<img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testAllLots.PNG> </p>
 <br>
-<img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testLot2.PNG> 
-The results of the t-test for the suspension coils for Lot 2 shows that they are not statistically different from the population mean, as the results yeilded a t-value of 0.52.
+
+**Lot 1:** The results of the t-test for the suspension coils for Lot 1 shows that they are not statistically different from the population mean, as the results yeilded a t-value of 0. 
+<p align="center">
+<img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testLot1.PNG> </p>
 <br>
-<img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testLot3.PNG> 
-The results of the t-test for the suspension coils for Lot 3 shows that the results have a slight statistical difference from the population mean, as the results yeilded a t-value of -2.09. The p-value for this set it calculated to be 0.0416 which means the results for lot 3 have a very low signifigance level.
-</p>
+
+**Lot 2:** The results of the t-test for the suspension coils for Lot 2 shows that they are not statistically different from the population mean, as the results yeilded a t-value of 0.52.
+<p align="center">
+<img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testLot2.PNG> </p>
+<br>
+
+**Lot 3:** The results of the t-test for the suspension coils for Lot 3 shows that the results have a slight statistical difference from the population mean, as the results yeilded a t-value of -2.09. The p-value for this set it calculated to be 0.0416 which means the results for lot 3 have a very low signifigance level.
+<p align="center">
+<img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testLot3.PNG> </p>
+
 
 ## Study Design: MechaCar vs Competition
 
