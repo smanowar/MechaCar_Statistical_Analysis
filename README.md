@@ -1,4 +1,7 @@
-# MechaCar_Statistical_Analysis
+# MechaCar Statistical Analysis
+
+## Overview
+Using R, we will analyze data obtained from MechaCar's prototypes to determine summary statistics relating to miles per gallon (MPG), and suspension coils. 
 
 ## Linear Regression to Predict MPG
 Performing a linear Regression analysis on the data yeilds the following summary statistics:
@@ -17,7 +20,7 @@ The p-Values for the coefficients are as follows:
 - ground clearance: 5.21x10^-8
 - AWD: 0.1852
 
-From this we can see that vehicle length and ground clearance have a statistically signifigant impact on the mpg of the prototypes. 
+From this we can see that vehicle length and ground clearance have a statistically significant impact on the mpg of the MechaCar prototypes. 
 <br>
 
  ***Is the slope of the linear model considered to be zero? Why or why not?***
@@ -50,31 +53,44 @@ However, taking a look at the Lot Summary stats, we can see that the variance fo
 ## T-Tests on Suspension Coils
 ***Briefly summarize your interpretation and findings for the t-test results***
 
-**All Lots:** The results of the t-test for the suspension coils across all manufacturing lots shows that they are not statistically different from the population mean,  as the results yeilded a t-value of -1.89.
+**All Lots:** The t-test for the data containing all three lots shows that the results are not statistcally different from the population mean. 
+<br>The data yeilds a p-Value of 0.06 which is not low enough to reject the null hypothesis.
+
 <p align="center">
 <img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testAllLots.PNG> </p>
 <br>
 
-**Lot 1:** The results of the t-test for the suspension coils for Lot 1 shows that they are not statistically different from the population mean, as the results yeilded a t-value of 0. 
+**Lot 1:** The results of the t-test for Lot 1 shows that the results are not statistically different from the population mean.<br>
+The data set yeilds a p-Value of 1, which is not low enough to reject the null hypothesis.
+
 <p align="center">
 <img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testLot1.PNG> </p>
 <br>
 
-**Lot 2:** The results of the t-test for the suspension coils for Lot 2 shows that they are not statistically different from the population mean, as the results yeilded a t-value of 0.52.
+**Lot 2:** The results of the t-test for Lot 2 shows that the results are not statistically different from the population mean.<br>
+The data set yeilds a p-Value of 0.6072, which is not low enough to reject the null hypothesis.
 <p align="center">
 <img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testLot2.PNG> </p>
 <br>
 
-**Lot 3:** The results of the t-test for the suspension coils for Lot 3 shows that the results have a slight statistical difference from the population mean, as the results yeilded a t-value of -2.09. The p-value for this set it calculated to be 0.0416 which means the results for lot 3 have a very low signifigance level.
+**Lot 3:** The results of the t-test for Lot 3 shows that the results have a slight statistical difference from the population mean <br>
+The p-value for this set it calculated to be 0.0416 which means that we are able to reject the null hypothesis.
 <p align="center">
 <img src=https://github.com/smanowar/MechaCar_Statistical_Analysis/blob/main/images/t_testLot3.PNG> </p>
 
 
 ## Study Design: MechaCar vs Competition
+***Write a short description of a statistical study that can quantify how the MechaCar performs against the competition***
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+*What metric or metrics are you going to test?* <br>
+The metric we would focus on would be MechaCar's MPG compared to the competitors. MPG is a way to determine the fuel efficiency of a vehicle, which is a big selling point to consumers as many calculate this into their cost of living. Fuel efficiency is also very sought out as it is more environmentally friendly.
 
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+*What is the null hypothesis or alternative hypothesis?* <br>
+Null Hypothesis: The average MPG of MechaCar's prototypes are similar to the MPG of competitor's vehicles of similar vehicle types. 
+Alternate Hypothesis: The average MPG of MechaCar's prototypes are statistically above or below the MPG of competitor's vehicles of similar vehicle types.
+
+*What statistical test would you use to test the hypothesis? And why?* <br>
+The best statistical test for this would be a two-sample t-test.
+
+*What data is needed to run the statistical test?* <br>
+Data needed in order to conduct the study would be MPG data of all MechaCar protoypes as well as the type of vehicle of the prototype. The same data would need to be collected for the competitor's vehicles.
